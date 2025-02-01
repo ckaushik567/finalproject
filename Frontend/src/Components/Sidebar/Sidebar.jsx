@@ -1,10 +1,10 @@
 import React, { useContext, useState } from 'react';
 import sidebarCss from './Sidebar.module.css';
 import homeLogo from '../../assets/logo.png';
-import dashImg from '../../assets/icon.png';
+import dashImg from '../../assets/Icon.png';
 import linkImg from '../../assets/icon1.png';
-import analyticsImg from '../../assets/icons.png';
-import settingImg from '../../assets/icons1.png';
+import analyticsImg from '../../assets/Icons.png';
+import settingImg from '../../assets/Icons1.png';
 import { StoreContext } from '../Context/StoreContext';
 import { useNavigate } from 'react-router-dom';
 function Sidebar() {
