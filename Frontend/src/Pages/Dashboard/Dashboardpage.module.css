@@ -1,0 +1,72 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+     width: 100%;   
+}
+.navbarContainer{
+    width: 100%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+.modalContainer{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    
+}
+.dashboardContainer{
+    width: 100%;
+    padding: 20px;
+}
+
+
+.linkModalOverlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    opacity: 50%;
+    z-index: 2;
+}
+
+.linkModalContent {
+    z-index: 3;
+}
+
+.delModalContent {
+    z-index: 3;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 343px){
+     .container{
+        display: flex;
+        flex-direction: column;
+     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 

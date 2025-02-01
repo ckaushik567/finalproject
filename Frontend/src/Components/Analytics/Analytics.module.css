@@ -1,0 +1,169 @@
+.container {
+  padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #F8F8F8;
+    height: 86vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #3B3C51;
+    /* padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-size: 17px;
+    border-radius: 6px;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; */
+    
+  }
+  .table {
+    width: 100%;
+    border-radius: 10px;
+    border-collapse: collapse;
+    margin: 1px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    /* width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+     
+    border-radius: 6px; */
+  }
+  .table thead th {
+    background-color: #f3f7fd;
+    color: #333333;
+    font-weight: 600;
+    padding: 15px 10px;
+    
+    border-radius: 6px;
+  }
+  
+  .table thead img {
+    width: 12px;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+  .table tbody tr {
+     background-color: #FFFFFF;
+  }
+  
+  .table tbody tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .table td {
+    padding: 12px 10px;
+    font-size: 17px;
+    color: #555555;
+  }
+  .shortLink {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .copyBtn {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 12px;
+    text-decoration: underline;
+  }
+  
+  .copyBtn:hover {
+    text-decoration: none;
+  }
+
+
+  .pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .lt{
+    background-color: #C4CDD5;
+    padding: 6px;
+    border: 1px solid #C4CDD5;
+    color: white;
+    border-radius: 3px;
+  }
+  .tableConatainer{
+    width: 100%;
+  }
+  .gt{
+    background-color: #C4CDD5;
+    padding: 6px;
+    border: 1px solid #C4CDD5;
+    color: white;
+    border-radius: 3px;
+  }
+  .nuberBtn{
+    border: 1px solid #DFE3E8;
+    padding: 6px;
+  }
+  .nuberBtn{
+    /* border: 1px solid #4200FF; */
+    background-color: #FFFFFF;
+    padding:6px 8px;
+    border-radius: 3px;
+    font-weight: 700;
+  }
+  .activePage{
+    border: 1px solid #4200FF;
+    background-color: #FFFFFF;
+    padding:6px 8px;
+    border-radius: 3px;
+    font-weight: 700;
+    color: #4200FF;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media only screen and (max-width: 343px){
+    .container{
+      width: 100%;
+      display: block;
+       
+       
+    }
+    .tableConatainer{
+      overflow-x: scroll;
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+  }

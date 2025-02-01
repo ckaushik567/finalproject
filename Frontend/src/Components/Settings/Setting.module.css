@@ -1,0 +1,118 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    height: 100%;
+    gap: 20px;
+    margin-top: 40px;
+}
+.inputSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.inputData{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: -10px;
+    width: 27vw;
+    height: 7vh;
+}
+.commonInput{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 5px;
+    height: 7vh;
+}
+.commonInput span{
+    color: red;
+    font-size: 12px;
+}
+.inputData input{
+    border:1px solid #ECECF2;
+    padding: 10px 20px;
+    width: 20vw;
+    border-radius: 6px;
+}
+.btnSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+.save{
+    width: 27vw;
+    background-color: #1B48DA;
+    border: 1px solid #1B48DA;
+    padding: 8px;
+    border-radius: 6px;
+    color: white;
+}
+.del{
+    width: 27vw;
+    background-color: #EB0D0D;
+    border: 1px solid #EB0D0D;
+    padding: 8px;
+    border-radius: 8px;
+    color: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 343px){
+    .container{
+        width: 100%;
+    }
+
+    .commonInput input{
+        width: 100%;
+    }
+    .inputSection{
+        width: 100%;
+    }
+    .inputData{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 5px;
+    }
+    .btnSection button{
+        width: 100%;
+    }
+    .btnSection{
+        padding: 0px 5px;
+    }
+}

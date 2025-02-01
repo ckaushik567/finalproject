@@ -1,0 +1,50 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.navbarContainer{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 343px){
+    .container{
+       display: flex;
+       flex-direction: column;
+    }
+}

@@ -1,0 +1,105 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+.modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #FFFFFF !important;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    width: 40vw;
+    height: 35vh;
+    position: relative;
+}
+.modalContent{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.btnSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.btnNo{
+    background-color: #1B48DA;
+    padding: 8px 60px;
+    border: 1px solid #1B48DA;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.btn{
+    background-color: #ECECEE;
+    padding: 8px 60px;
+    border: 1px solid #ECECEE;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+}
+.container i{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 343px){
+    .container{
+        width: 100%;
+    }
+    .modal{
+        width: 100%;
+    }
+}
