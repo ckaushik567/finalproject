@@ -19,7 +19,7 @@ function Links() {
   useEffect(() => {
     const fetchLinkData = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/linkSearch?page=${currentPage}&limit=${linksPerPage}&search=${searchQuery}`);
+        const response = await fetch(`https://finalproject-backend-y202.onrender.com/linkSearch?page=${currentPage}&limit=${linksPerPage}&search=${searchQuery}`);
         const data = await response.json();
         setLinksData(data.links);
         setTotalPages(data.pagination.totalPages);
@@ -42,7 +42,7 @@ function Links() {
   useEffect(() => {
     const fetchLinkData = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/link?page=${currentPage}&limit=${linksPerPage}`);
+        const response = await fetch(`https://finalproject-backend-y202.onrender.com/link?page=${currentPage}&limit=${linksPerPage}`);
         const data = await response.json();
         setLinksData(data.links);
         // setSearchQuery(data.links.URL);
@@ -89,7 +89,7 @@ function Links() {
     try {
       const userAgent = navigator.userAgent.split(" ")[0];
       console.log("Extracted User-Agent:", userAgent);
-      const trackClickResponse = await fetch("http://localhost:5000/trackClick", {
+      const trackClickResponse = await fetch("https://finalproject-backend-y202.onrender.com/trackClick", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -107,7 +107,7 @@ function Links() {
         console.error("Failed to track click");
       }
 
-      const patchResponse = await fetch(`http://localhost:5000/link/${id}/click`, {
+      const patchResponse = await fetch(`https://finalproject-backend-y202.onrender.com/link/${id}/click`, {
         method: "PATCH",
       });
 
@@ -124,7 +124,7 @@ function Links() {
         console.error("Failed to update click count");
       }
 
-      const response = await fetch("http://localhost:5000/click", {
+      const response = await fetch("https://finalproject-backend-y202.onrender.com/click", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
     });
@@ -162,7 +162,7 @@ function Links() {
 
   async function handleShortLinkClick(id){
     try{
-    const shortUrl = await fetch(`http://localhost:5000/${id}`);
+    const shortUrl = await fetch(`https://finalproject-backend-y202.onrender.com/${id}`);
     const data = await shortUrl.json();
     console.log(data)
     }

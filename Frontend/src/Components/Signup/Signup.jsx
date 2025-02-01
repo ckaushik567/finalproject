@@ -28,7 +28,7 @@ function Signup() {
     }
 
     async function handleOnError() {
-        const res = await fetch('http://localhost:5000/signup', {
+        const res = await fetch('https://finalproject-backend-y202.onrender.com/signup', {
             method: 'POST',
             body: JSON.stringify(inputData),
             headers: {

@@ -12,7 +12,7 @@ function Analytics() {
     const fetchAnalyticsData = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/analytics?page=${currentPage}&limit=4`
+          `https://finalproject-backend-y202.onrender.com/analytics?page=${currentPage}&limit=4`
         );
         if (response.ok) {
           const data = await response.json();

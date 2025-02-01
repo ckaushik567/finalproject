@@ -52,8 +52,8 @@ function Linkmodal() {
         try {
             const method = isUpdate ? 'PUT' : 'POST';
             const url = isUpdate
-                ? `http://localhost:5000/link/${editId}` // Use the ID for PUT (update)
-                : 'http://localhost:5000/link';
+                ? `https://finalproject-backend-y202.onrender.com/link/${editId}` // Use the ID for PUT (update)
+                : 'https://finalproject-backend-y202.onrender.com/link';
             const res = await fetch(url, {
                 method: method,
                 body: JSON.stringify(inputData),

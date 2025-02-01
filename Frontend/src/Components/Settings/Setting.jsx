@@ -30,7 +30,7 @@ function Setting() {
     }
 
     async function handleOnDel(){
-        const res = await fetch(`http://localhost:5000/user/${userId}`, {
+        const res = await fetch(`https://finalproject-backend-y202.onrender.com/user/${userId}`, {
             method: "DELETE",
             body: JSON.stringify(inputData),
             headers: {
@@ -66,7 +66,7 @@ function Setting() {
         }
 
         try {
-            const res = await fetch(`http://localhost:5000/user/${userId}`, {
+            const res = await fetch(`https://finalproject-backend-y202.onrender.com/user/${userId}`, {
                 method: "PUT",
                 body: JSON.stringify(inputData),
                 headers: {

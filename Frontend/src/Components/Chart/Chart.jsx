@@ -46,7 +46,7 @@ const ChartsContainer = () => {
     const fetchDateWiseClicks = async () => {
       try {
 
-        const response = await fetch("http://localhost:5000/clicksdata");
+        const response = await fetch("https://finalproject-backend-y202.onrender.com/clicksdata");
         const data = await response.json();
         console.log(data.data)
         setDateWiseClicksData(data.data.map(item=>({timestamp:formatDate(item.timestamp), value:item.clicks})))
@@ -57,7 +57,7 @@ const ChartsContainer = () => {
     };
     const fetchClickDevices = async () => {
       try {
-        const response = await fetch("http://localhost:5000/device-wise-analytics");
+        const response = await fetch("https://finalproject-backend-y202.onrender.com/device-wise-analytics");
         const data = await response.json();
         setClickDevicesData(data.map(item => ({ device: item._id, value: item.totalClicks })));
       } catch (error) {
