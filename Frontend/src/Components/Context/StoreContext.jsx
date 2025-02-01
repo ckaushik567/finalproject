@@ -29,7 +29,7 @@ const StoreContextProvider = (props) => {
 
     const handleOnDel = async (delId) => {
         try {
-          const response = await fetch(`http://localhost:5000/link/${delId}`, {
+          const response = await fetch(`https://finalproject-backend-y202.onrender.com/link/${delId}`, {
             method: "DELETE",
           });
     
